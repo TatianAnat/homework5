@@ -39,5 +39,26 @@ public class Main {
         int sheetsOfPaper = totalSheets / (lydmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
         System.out.println("На каждого ученика рассчитано " + sheetsOfPaper + " листов бумаги");
 
+        //task4
+        byte minutes = 2;
+        byte bottle = 16;
+        //рассчитаем сколько за 1 минуту будет изготовлено бутылок
+        int oneminut = bottle / minutes;
+        byte twentyMinutes = 20;
+        int twentyMinutesBottle = twentyMinutes * oneminut;
+        System.out.println("За " + twentyMinutes + " минут машина произвела " + twentyMinutesBottle + " штук бутылок");
+        int day = 24 * 60;
+        int dayBottle = day * oneminut;
+        System.out.println("За " + day + " минут(сутки) машина произвела " + dayBottle + " штук бутылок");
+        int threeDays = 3 * day;
+        int threeDaysBottle = threeDays * oneminut;
+        System.out.println("За " + threeDays + " минут(3 дня) машина произвела " + threeDaysBottle + " штук бутылок");
+        int month = 30 * day;
+        int monthBottle = month * oneminut;
+        System.out.println("За " + month+ " минут(1 месяц) машина произвела " + monthBottle + " штук бутылок");
+
+
+
+
     }
 }
