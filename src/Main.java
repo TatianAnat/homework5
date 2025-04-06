@@ -35,7 +35,7 @@ public class Main {
         byte annaSergeevna = 27;
         byte ekaterinaAndreevna = 30;
         short totalSheets = 480;
-        //берём тип float, т.к. при делении может быть дробное число
+        //логичнее взять тип float, т.к. при делении может быть дробное число
         int sheetsOfPaper = totalSheets / (lydmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
         System.out.println("На каждого ученика рассчитано " + sheetsOfPaper + " листов бумаги");
 
