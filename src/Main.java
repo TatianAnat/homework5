@@ -69,6 +69,16 @@ public class Main {
         int allBrownPaint = totalNumberOfOffices * brownPaint;
         System.out.println("В школе, где " + totalNumberOfOffices + " классов, нужно " + allWhitePaint + " банок белой краски и " + allBrownPaint + " банок коричневой краски" );
 
+        //task6
+        int banana = 5 * 80;
+        int milk = 105 * 2;
+        int iceCream = 100 * 2;
+        int egg = 4 * 70;
+        int sportsBreakfastInGrams = banana + milk + iceCream + egg;
+        System.out.println("Вес спорт завтрака равен " + sportsBreakfastInGrams + " грамм ");
+        int sportsBreakfastInKilograms = sportsBreakfastInGrams / 1000;
+        System.out.println("Вес спорт завтрака равен " + sportsBreakfastInKilograms + " килограмм ");
+
 
 
 
