@@ -57,6 +57,19 @@ public class Main {
         int monthBottle = month * oneminut;
         System.out.println("За " + month+ " минут(1 месяц) машина произвела " + monthBottle + " штук бутылок");
 
+        //task5
+
+        byte totalCansOfPaint = 120;
+        //на один класс кол-во банок каждой краски
+        byte whitePaint = 2;
+        byte brownPaint = 4;
+        int totalCansClass = whitePaint + brownPaint;
+        int totalNumberOfOffices = totalCansOfPaint / totalCansClass;
+        int allWhitePaint = totalNumberOfOffices * whitePaint;
+        int allBrownPaint = totalNumberOfOffices * brownPaint;
+        System.out.println("В школе, где " + totalNumberOfOffices + " классов, нужно " + allWhitePaint + " банок белой краски и " + allBrownPaint + " банок коричневой краски" );
+
+
 
 
 
