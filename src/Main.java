@@ -36,25 +36,25 @@ public class Main {
         byte ekaterinaAndreevna = 30;
         short totalSheets = 480;
         //логичнее взять тип float, т.к. при делении может быть дробное число
-        int sheetsOfPaper = totalSheets / (lydmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
+        float sheetsOfPaper = totalSheets / (float)(lydmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
         System.out.println("На каждого ученика рассчитано " + sheetsOfPaper + " листов бумаги");
 
         //task4
         byte minutes = 2;
         byte bottle = 16;
         //рассчитаем сколько за 1 минуту будет изготовлено бутылок
-        int oneminut = bottle / minutes;
+        float oneminut = bottle / (float)minutes;
         byte twentyMinutes = 20;
-        int twentyMinutesBottle = twentyMinutes * oneminut;
+        float twentyMinutesBottle = twentyMinutes * oneminut;
         System.out.println("За " + twentyMinutes + " минут машина произвела " + twentyMinutesBottle + " штук бутылок");
         int day = 24 * 60;
-        int dayBottle = day * oneminut;
+        float dayBottle = day * oneminut;
         System.out.println("За " + day + " минут(сутки) машина произвела " + dayBottle + " штук бутылок");
         int threeDays = 3 * day;
-        int threeDaysBottle = threeDays * oneminut;
+        float threeDaysBottle = threeDays * oneminut;
         System.out.println("За " + threeDays + " минут(3 дня) машина произвела " + threeDaysBottle + " штук бутылок");
         int month = 30 * day;
-        int monthBottle = month * oneminut;
+        float monthBottle = month * oneminut;
         System.out.println("За " + month+ " минут(1 месяц) машина произвела " + monthBottle + " штук бутылок");
 
         //task5
@@ -64,9 +64,9 @@ public class Main {
         byte whitePaint = 2;
         byte brownPaint = 4;
         int totalCansClass = whitePaint + brownPaint;
-        int totalNumberOfOffices = totalCansOfPaint / totalCansClass;
-        int allWhitePaint = totalNumberOfOffices * whitePaint;
-        int allBrownPaint = totalNumberOfOffices * brownPaint;
+        float totalNumberOfOffices = totalCansOfPaint / (float) totalCansClass;
+        float allWhitePaint =  totalNumberOfOffices * whitePaint;
+        float allBrownPaint = totalNumberOfOffices * brownPaint;
         System.out.println("В школе, где " + totalNumberOfOffices + " классов, нужно " + allWhitePaint + " банок белой краски и " + allBrownPaint + " банок коричневой краски" );
 
         //task6
@@ -76,8 +76,22 @@ public class Main {
         int egg = 4 * 70;
         int sportsBreakfastInGrams = banana + milk + iceCream + egg;
         System.out.println("Вес спорт завтрака равен " + sportsBreakfastInGrams + " грамм ");
-        int sportsBreakfastInKilograms = sportsBreakfastInGrams / 1000;
+        float sportsBreakfastInKilograms = sportsBreakfastInGrams / 1000f;
         System.out.println("Вес спорт завтрака равен " + sportsBreakfastInKilograms + " килограмм ");
+
+        //task7
+        short inOneKilogram = 1000;
+        short dropWeightKilograms = 7;
+        int kilogramsToGrams = dropWeightKilograms * inOneKilogram;
+        System.out.println("Спортсмену нужно скинуть " + dropWeightKilograms +  " килограмм. Или  " + kilogramsToGrams + " грамм");
+        short firstWay = 250;
+        short secondWay = 500;
+        float numberOfDaysForTheFirstMethod = kilogramsToGrams / (float)firstWay;
+        System.out.println("Если спортсмен будет скидывать по " + firstWay +  " грамм в день , то ему потребуется " + numberOfDaysForTheFirstMethod + " день (дней), чтобы добиться результата похудения");
+        float numberOfDaysForTheSecondMethod = kilogramsToGrams / (float)secondWay;
+        System.out.println("Если спортсмен будет скидывать по " + secondWay +  " грамм в день , то ему потребуется " + numberOfDaysForTheSecondMethod + " день (дней), чтобы добиться результата похудения");
+        float averageNumberOfDays = (numberOfDaysForTheFirstMethod + numberOfDaysForTheSecondMethod) / 2;
+        System.out.println("Спортсмену потребуется " + averageNumberOfDays + " день (дней) в среднем, чтобы добиться результата похудения. ");
 
 
 
