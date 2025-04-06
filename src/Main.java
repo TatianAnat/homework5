@@ -29,5 +29,15 @@ public class Main {
         System.out.println(numberValue6);
         byte numberValue7 = 67;
         System.out.println(numberValue7);
+
+        //task3
+        byte lydmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        short totalSheets = 480;
+        //берём тип float, т.к. при делении может быть дробное число
+        int sheetsOfPaper = totalSheets / (lydmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
+        System.out.println("На каждого ученика рассчитано " + sheetsOfPaper + " листов бумаги");
+
     }
 }
