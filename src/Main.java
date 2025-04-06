@@ -93,6 +93,30 @@ public class Main {
         float averageNumberOfDays = (numberOfDaysForTheFirstMethod + numberOfDaysForTheSecondMethod) / 2;
         System.out.println("Спортсмену потребуется " + averageNumberOfDays + " день (дней) в среднем, чтобы добиться результата похудения. ");
 
+        //task8
+        int masha = 67760;
+        int denis = 83690;
+        int christina = 76230;
+        byte year = 12;
+        int mashaPreviousIncomeYear = masha * year;
+        int denisPreviousIncomeYear = denis * year;
+        int christinaPreviousIncomeYear = christina * year;
+        float promotion = 0.1f;
+        float mashaNew = (masha * promotion)  + masha;
+        float denisNew = (denis * promotion) + denis;
+        float christinaNew = (christina * promotion) + christina;
+        float mashaNewSalaryYear = mashaNew * year;
+        float mashaIncomeIncreased = mashaNewSalaryYear - mashaPreviousIncomeYear;
+        System.out.println("Маша теперь получает " + mashaNewSalaryYear + " рублей. Годовой доход вырос на " + mashaIncomeIncreased + " рублей.");
+        float denisNewSalaryYear = denisNew * year;
+        float denisIncomeIncreased = denisNewSalaryYear - denisPreviousIncomeYear;
+        System.out.println("Денис теперь получает " + denisNewSalaryYear + " рублей. Годовой доход вырос на " + denisIncomeIncreased + " рублей.");
+        float christinaNewSalaryYear = christinaNew * year;
+        float christinaIncomeIncreased = christinaNewSalaryYear - christinaPreviousIncomeYear;
+        System.out.println("Кристина теперь получает " + christinaNewSalaryYear + " рублей. Годовой доход вырос на " + christinaIncomeIncreased + " рублей.");
+
+
+
 
 
 
